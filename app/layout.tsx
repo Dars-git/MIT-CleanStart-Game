@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Startup Simulation",
-  description: "Single-player startup simulation"
+  title: "MIT-CleanStart-Game",
+  description: "Single-player turn-based startup simulation"
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

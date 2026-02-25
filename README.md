@@ -5,6 +5,8 @@ This project implements **Option A** from the assignment PDF:
 - Supabase auth + database backend
 - Turn-based startup simulation with server-authoritative game logic
 
+Live URL: https://mitcleanstartgame.vercel.app/
+
 ## What was built
 - Email/password auth with session persistence across reload
 - Quarterly decision panel: `price`, `new engineers`, `new sales staff`, `salary %`

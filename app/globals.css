@@ -1,0 +1,162 @@
+:root {
+  --bg: #f3f6f8;
+  --panel: #ffffff;
+  --ink: #0f1720;
+  --muted: #5a6a79;
+  --accent: #0e7490;
+  --danger: #b91c1c;
+  --win: #15803d;
+  --line: #d5dee6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top right, #d9edf7, var(--bg));
+  color: var(--ink);
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.metrics {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.metric-value {
+  margin-top: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.notice {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.notice-danger {
+  background: #fee2e2;
+  color: #7f1d1d;
+}
+
+.notice-win {
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.office {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.desk-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(20px, 1fr));
+  gap: 6px;
+}
+
+.desk {
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid #9ba8b6;
+  background: #eef2f6;
+}
+
+.desk.eng {
+  background: #93c5fd;
+  border-color: #2563eb;
+}
+
+.desk.sales {
+  background: #fde68a;
+  border-color: #b45309;
+}
+
+.bar {
+  height: 14px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #0284c7, #0ea5e9);
+}
+
+@media (max-width: 720px) {
+  .office {
+    grid-template-columns: 1fr;
+  }
+}

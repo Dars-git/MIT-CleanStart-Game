@@ -1,4 +1,4 @@
-# Startup Simulation (Option A)
+# MIT CleanStart game
 
 This project implements **Option A** from the assignment PDF:
 - Next.js frontend
